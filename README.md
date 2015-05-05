@@ -1,10 +1,10 @@
 # Namer
 
-Very simple name generator web app.
+Very simple name generator web app, seeded with fragments of actual planet and moon names.
 
 See it here:
 
-https://gratimax.net/namer/
+https://gratimax.net/thome/
 
 Some ideas for improvements:
 
