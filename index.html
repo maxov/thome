@@ -27,10 +27,21 @@
           <div class="uk-grid">
             <div class="uk-width-1-4 uk-text-center">
               <div class="uk-panel uk-panel-box uk-panel-box-secondary">
-                <button class="uk-button uk-button-large" type="button" id="name-button">Generate More Names</button>
-                <p>Maximum name fragments</p>
-                <input id="max-frag" type="range" min="2" max="6" value="2"/>
-                <span id="max-frag-display">2</span>
+                <form action="" class="uk-form uk-form-stacked">
+                  <div class="uk-form-row">
+                    <label class="uk-form-label" for="max-frag">Maximum name fragments</label>
+                    <div class="uk-form-controls uk-grid">
+                      <div class="uk-width-4-5 uk-container-center">
+                        <input id="max-frag" class="uk-width-4-5" type="range" min="2" max="6" value="2"/>
+                        <span id="max-frag-display">2</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-form-row">
+                    <button class="uk-button uk-button-large uk-width-9-10" type="button" id="name-button">Generate More Names</button>
+                  </div>
+                </form>
+                <hr class="uk-grid-divider"/>
                 <p><span id="total-possible"></span> possible combinations, you're seeing 15</p>
               </div>
             </div>
