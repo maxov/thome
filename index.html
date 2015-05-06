@@ -4,55 +4,74 @@
 
     <title>Thome</title>
 
-    <link href="vendor/css/uikit.min.css" rel="stylesheet">
     <link href="vendor/css/uikit.almost-flat.min.css" rel="stylesheet">
 
   </head>
   <body>
 
     <div class="uk-container uk-container-center uk-margin-top uk-margin-bottom">
-      <div class="uk-grid">
-        <div class="uk-width-1">
-          <div class="uk-text-center">
-            <h1 class="uk-heading-large">Thome</h1>
-            <p class="uk-text-large">Name generator seeded with fragments of actual planet and moon names</p>
-            <button class="uk-button uk-button-large" type="button" id="name-button">Generate More Names</button>
-            <p>Maximum name fragments</p>
-            <input id="max-frag" type="range" min="2" max="6" value="2"/>
-            <span id="max-frag-display">2</span>
-            <ul class="uk-list uk-list-striped" id="name-list">
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-              <li>-</li>
-            </ul>
-            <p><span id="total-possible"></span> possible combinations, you're seeing 15</p>
-
-          </div>
-        </div>
-        <div class="uk-width-2-3 uk-container-center uk-text-center">
-          <p>With between 2 to 3 fragments, the number of possible name becomes 124,000,000, but most of them suck.
-            It's best to restrict the number of fragments to two since that seems to be a rather nice number.
-            There's nearly 250,000 combinations, which is still probably more than anyone ever needs.
-            Perhaps a more versatile generator could perform better.
-          </p>
-          <p>Most names are pretty bad/okayish in my opinion because the generator isn't very complex.
-            There are some nice ones, like "Thome", the name I chose for this generator.</p>
-          <p>By <a href="https://github.com/gratimax">@gratimax</a> (Max Ovsiankin)<br>
-             Source at <a href="https://github.com/gratimax/thome">https://github.com/gratimax/thome</a></p>
-        </div>
+      <div class="uk-text-center uk-margin-bottom">
+        <h1 class="uk-heading-large">Thome</h1>
+        <p class="uk-text-large">Name generator seeded with fragments of actual planet and moon names</p>
       </div>
+      <ul class="uk-tab" data-uk-tab="{connect: '#main-panel'}">
+        <li class="uk-active">
+          <a href="">Planet Names</a>
+        </li>
+        <li>
+          <a href="">About</a>
+        </li>
+      </ul>
+      <ul id="main-panel" class="uk-switcher uk-margin">
+        <li>
+          <div class="uk-grid">
+            <div class="uk-width-1-4 uk-text-center">
+              <div class="uk-panel uk-panel-box uk-panel-box-secondary">
+                <button class="uk-button uk-button-large" type="button" id="name-button">Generate More Names</button>
+                <p>Maximum name fragments</p>
+                <input id="max-frag" type="range" min="2" max="6" value="2"/>
+                <span id="max-frag-display">2</span>
+                <p><span id="total-possible"></span> possible combinations, you're seeing 15</p>
+              </div>
+            </div>
+            <div class="uk-width-3-4 uk-margin-large-bottom">
+              <ul class="uk-list uk-list-striped" id="name-list">
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+                <li>-</li>
+              </ul>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="uk-block">
+            <div class="uk-container">
+              <p class="uk-text-large"><strong>Thome</strong> ~ Name generator seeded with fragments of actual planet and moon names</p>
+              <p>With between 2 to 3 fragments, the number of possible name becomes 124,000,000, but most of them suck.
+                It's best to restrict the number of fragments to two since that seems to be a rather nice number.
+                There's nearly 250,000 combinations, which is still probably more than anyone ever needs.
+                Perhaps a more versatile generator could perform better.
+              </p>
+              <p>Most names are pretty bad/okayish in my opinion because the generator isn't very complex.
+                There are some nice ones, like "Thome", the name I chose for this generator.</p>
+              <p>By <a href="https://github.com/gratimax">@gratimax</a> (Max Ovsiankin)</p>
+              <p>Source at <a href="https://github.com/gratimax/thome">https://github.com/gratimax/thome</a></p>
+            </div>
+          </div>
+        </li>
+      </ul>
     </div>
 
     <script src="vendor/js/jquery.min.js"></script>
